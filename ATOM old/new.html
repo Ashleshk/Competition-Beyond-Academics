@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Bootstrap core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--external css-->
+    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet">
+    <link href="template.css" rel="stylesheet">
+  </head>
+  <style type="text/css">
+
+  </style>
+  <body>
+        <div class="container">
+          <div id="quiz">
+              <h1 id="quiz-name">MY QUIZ</h1>
+
+              <div class="container">
+                <ul>
+ <li>
+   <h3>How many letters are there in "JS"?</h3>
+   <input type="radio" name="question0" value="A">2<br>
+   <input type="radio" name="question0" value="B">1<br>
+   <input type="radio" name="question0" value="C">3<br>
+   <input type="radio" name="question0" value="D">4<br>
+ </li>
+ <li>
+   <h3>How many letters are there in "BMX"?</h3>
+   <input type="radio" name="question1" value="A">2<br>
+   <input type="radio" name="question1" value="B">1<br>
+   <input type="radio" name="question1" value="C">3<br>
+   <input type="radio" name="question1" value="D">4<br>
+ </li>
+ <li>
+   <h3>How many letters are there in "A"?</h3>
+   <input type="radio" name="question2" value="A">2<br>
+   <input type="radio" name="question2" value="B">1<br>
+   <input type="radio" name="question2" value="C">3<br>
+   <input type="radio" name="question2" value="D">4<br>
+ </li>
+</ul>
+            </div>
+
+<button onclick="returnScore()">View Results</button>
+        </div>
+      </div>
+  </body>
+
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+ <script type="text/javascript">
+
+              tot =10;
+
+            function getCheckedValue( Buttonname ){
+              var radios = document.getElementsByName( Buttonname ); // Get radio group by-name
+              for(var y=0; y<radios.length; y++)
+                if(radios[y].checked) return radios[y].value; // return the checked value
+            }
+
+            function getScore(){
+            var score = 0;
+            for (var i=0; i<tot; i++)
+            {  if(getCheckedValue("question"+i)==="-10") score += -10;
+              if(getCheckedValue("question"+i)==="-5") score += -5; // increment only
+              if(getCheckedValue("question"+i)==="0") score=score+0;
+              if(getCheckedValue("question"+i)==="5") score += 5;
+              if(getCheckedValue("question"+i)==="10") score += 10;}
+            return score;
+            }
+
+            function returnScore(){
+            alert("Your score is "+ getScore() +"/"+ tot);
+            }
+ </script>
+</html>
