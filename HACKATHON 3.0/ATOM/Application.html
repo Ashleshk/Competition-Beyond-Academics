@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Hostel</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" media="all" rel="stylesheet">
+
+  <link rel="stylesheet" href="print.css">
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+          <div class="sidebar-toggle-box">
+            <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+          </div>
+          <!--logo start-->
+          <a href="DashBoard.html" class="logo"><b>COEP<span>HOSTEL</span></b></a>
+          <!--logo end-->
+          <div class="nav notify-row" id="top_menu"><!-- //TODO put search --></div>
+
+          <div class="top-menu">
+            <ul class="nav pull-right top-menu">
+              <li><a class="logout" href="login.html">Logout</a></li>
+            </ul>
+          </div>
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+          <p class="centered"><img src="avatar.png" class="img-circle" width="80"></a></p>
+
+          <h5 class="centered">--Your-Name--</h5>
+
+          <li class="mt">
+            <a href="Dashboard.html">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span>
+              </a>
+          </li>
+
+          <li class="mt">
+            <a href="Profile.html">
+              <i class="fa fa-user"></i>
+              <span>Profile</span>
+              </a>
+          </li>
+
+          <li class="mt">
+            <a href="Changepwd.html">
+              <i class="fa fa-user-secret"></i>
+              <span>Change Password</span>
+              </a>
+          </li>
+
+          <li class="mt">
+            <a href="Application.html">
+              <i class="fa fa-wpforms"></i>
+              <span>Application form</span>
+              </a>
+          </li>
+
+          <li class="mt">
+            <a href="Test.html">
+              <i class="fa fa-file-text"></i>
+              <span>Take test</span>
+              </a>
+          </li>
+
+          <li class="mt">
+            <a href="NextWhat.html">
+              <i class="fa fa-question-circle-o"></i>
+              <span>Next What ?</span>
+              </a>
+          </li>
+
+          <li class="mt">
+            <a href="Roommate.html">
+              <i class="fa fa-group"></i>
+              <span>Roommate Selection</span>
+              </a>
+          </li>
+
+          <li class="mt">
+            <a href="Merit.html">
+              <i class="fa fa-graduation-cap"></i>
+              <span> Merit List</span>
+              </a>
+          </li>
+
+          <li class="mt">
+            <a href="login.html">
+              <i class="glyphicon glyphicon-log-out"></i>
+              <span>Logout</span>
+              </a>
+          </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+        <div class="row mt">
+          <div class="col-lg-12">
+
+            <div class="row content-panel">
+
+              <div class="col-md-12 profile-text mt mb centered">
+                      <p class="Toplevelpanel"> Application Form</p>
+              </div>
+
+            </div>
+
+          </div>
+          <!-- /col-lg-12 -->
+          <div class="col-lg-12 mt">
+            <div class="row content-panel">
+
+              <!-- /panel-heading -->
+              <div class="panel-body">
+                <div class="tab-content">
+                  <div id="overview" class="tab-pane active">
+                    <div id="edit" class="tab-pane">
+                      <div class="row">
+                        <div class="col-md-8 col-lg-offset-2 detailed">
+                            <h4 class="mb"> <p>please fill the form with correct details</br>Photo Upload size must be not more than 100kb</p></h4>
+                            <form role="form" class="form-horizontal">
+
+                              <div id="printableArea">
+
+                                  <div class="form-group row">
+                                      <label id="firstname" for="firstname" class="col-4 col-form-label"><b>First Name*</b></label>
+                                      <div class="col-8">
+                                           <input id="firstname" name="firstname" placeholder="First Name" class="form-control" type="text" required="required">
+                                      </div>
+                                    </div>
+
+                                  <div class="form-group row">
+                                      <label id="middlename" for="middlename" class="col-4 col-form-label"><b>Middle Name*</b></label>
+                                      <div class="col-8">
+                                          <input id="middlename" name="middlename" placeholder="Middle Name" class="form-control" type="text" required="required">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                      <label id="Lastname" for="Lastname" class="col-4 col-form-label"><b>Last Name*</b></label>
+                                      <div class="col-8">
+                                          <input id="Lastname" name="Lastname" placeholder="Last Name" class="form-control "required="required" type="text">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                      <label id="ID" for="id" class="col-4 col-form-label"><b>ID*</b></label>
+                                      <div class="col-8">
+                                          <input id="ID" name="id"  placeholder="3520" class="form-control" required="required" type="text">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                      <label id="Bday" for="text" class="col-4 col-form-label"><b>Birth Date*</b></label>
+                                      <div class="col-8">
+                                          <input id="Bday" name="bday" placeholder="DD/MM/YYYY" class="form-control" required="required" type="date">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                      <label id="age" for="age" class="col-4 col-form-label"><b>Age*</b></label>
+                                      <div class="col-8">
+                                          <input id="age" name="age" placeholder="Age" class="form-control" required="required" type="number">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                      <label id="Prevmark" for="Prevmark" class="col-4 col-form-label"><b>Prevoius marksheet*</b></label>
+                                      <div class="col-8">
+                                          <input id="Prevmark" name="Prevmark" placeholder="image" class="form-control" required="required" type="image">
+                                      </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                        <label id="Gender" for="Gender" class="col-4 col-form-label"><b>Gender</b></label>
+                                        <div class="col-8">
+                                              <label id="male" class="radio-inline">
+                                                  <input type="radio" name="radioGroup" id="male" value="Male">Male &nbsp&nbsp&nbsp
+                                              </label>
+
+                                              <label id="female" class="radio-inline">
+                                                  <input type="radio" name="radioGroup" id="female" value="Female">
+                                                  Female &nbsp&nbsp&nbsp
+                                              </label>
+
+                                              <label id="other" class="radio-inline">
+                                                  <input type="radio" name="radioGroup" id="other" value="other">
+                                                  Other
+                                              </label>
+                                              <br />
+                                        </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                        <label id="mothername" for="mothername" class="col-4 col-form-label"><b>Mother's Name</b></label>
+                                        <div class="col-8">
+                                              <input id="mothername" name="mothername" placeholder="mother's Name" class="form-control" required="required" type="text">
+                                        </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                        <label for="caste" class="col-4 col-form-label"><b>Caste*</b></label>
+                                        <div class="col-8">
+                                              <input id="caste" name="caste" placeholder="Please enter caste as open/OBC/SBC/VJNT/NT-A/NT-B/NT-C/SC/ST" class="form-control  " required="required" type="text">
+                                        </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                        <label id="Subcaste" for="Subcaste" class="col-4 col-form-label"><b>Subcaste*</b></label>
+                                        <div class="col-8">
+                                              <input id="Subcaste" name="Subcaste" placeholder="Subcaste" class="form-control " required="required" type="text">
+                                        </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                        <label id="course" for="course" class="col-4 col-form-label"><b>Course*</b></label>
+                                        <div class="col-8">
+                                              <input id="course" name="course" placeholder="eg.First year/B.tech/M.Tech" class="form-control  " required="required" type="text">
+                                        </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                        <label id="branch" for="branch" class="col-4 col-form-label"><b>Branch*</b></label>
+                                        <div class="col-8">
+                                              <input id="branch" name="branch" placeholder="Please enter complete branch name" class="form-control  " required="required" type="text">
+                                        </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                        <label id="year" for="year" class="col-4 col-form-label"><b>Year*</b></label>
+                                        <div class="col-8">
+                                              <input id="year" name="year" placeholder="eg.1" class="form-control  " required="required" type="number" min="1" max="4">
+                                        </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                        <label id="email" for="email" class="col-4 col-form-label"><b>Email*</b></label>
+                                        <div class="col-8">
+                                              <input id="email" name="email" placeholder="Email" class="form-control  " required="required" type="text">
+                                        </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                        <label id="mobile" for="mobile"  class="col-4 col-form-label"><b>Mobile</b></label>
+                                        <div class="col-8">
+                                              <input id="mobile" name="mobile" placeholder="mobile" class="form-control  " type="text" required="required">
+                                        </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                        <label id="publicinfo" for="publicinfo" class="col-4 col-form-label"><b>Public Info</b></label>
+                                        <div class="col-8">
+                                              <textarea id="publicinfo" name="publicinfo" placeholder="this details will be displayed in room allocation"cols="40" rows="4" class="form-control" required="required"></textarea>
+                                        </div>
+                                  </div>
+
+                                  <div class="form-group row">
+                                        <label id="local_guardian" for="local_guardian" class="col-4 col-form-label" required="required"><b>Local gaurdian</b></label>
+                                        <div class="col-8">
+                                              <input id="local_guardian" name="local_guardian" placeholder="name" class="form-control  " type="text" required="required">
+                                        </div>
+                                 </div>
+
+                                  <div class="form-group row">
+                                        <label id="address" for="address" class="col-4 col-form-label"><b>Address</b></label>
+                                        <div class="col-8">
+                                              <textarea id="address" name="address" placeholder="Local Gaurdian Address" cols="40" rows="4" class="form-control" required="required"></textarea>
+                                        </div>
+                                 </div>
+                              </div>
+
+
+
+                                <div class="form-group row">
+                                        <div class="offset-4 col-8">
+                                              <button id="submit" name="submit" type="submit" class="btn btn-primary">Submit</button>&nbsp &nbsp &nbsp
+                                              <input type="button" id="print" name="Print" class="btn btn-primary" value="Print" onclick="printDiv('printableArea')" >
+                                        </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /row -->
+                  </div>
+                  <!-- /tab-pane -->
+                </div>
+                <!-- /tab-content -->
+              </div>
+              <!-- /panel-body -->
+            </div>
+             <!-- /col-lg-12 -->
+            </div>
+          <!-- /row -->
+          </div>
+        <!-- /container -->
+      </section>
+      <!-- /wrapper -->
+    </section>
+    <!-- /MAIN CONTENT -->
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+        <p>
+          &copy; Copyrights <strong>MindInvaders</strong>. No Rights Reserved
+        </p>
+        <div class="credits">
+
+          Created by PICT Student for hackhathon
+        </div>
+        <a href="#" class="go-top">
+          <i class="fa fa-angle-up"></i>
+          </a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <script src="Application.js">
+
+  </script>
+  <!--common script for all pages-->
+  <script src="lib/common-scripts.js"></script>
+  <!--script for this page-->
+
+</body>
+
+</html>

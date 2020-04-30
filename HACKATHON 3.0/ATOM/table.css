@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+  height: 100%;
+  border-width: thick;
+  margin-left: 10px;
+}
+h2{
+  margin-top: 70px;
+  margin-left: 10px;
+}
+h4{
+  margin-left: 10px;
+}
+tr,th{
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+}
+thead{
+    background-color: #000000;
+}
+.table-striped
+{
+   background-color: #D8DCDB;
+
+}

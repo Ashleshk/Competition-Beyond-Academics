@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta charset=utf-8 />
+<title> </title>
+<style>
+body {padding-top:50px}
+</style>
+</head>
+<body>
+<!-- <input type="text" id="text1" placeholder="select someone"></input> -->
+
+<input type="button" id="text1" value="sham" name="no" onclick="add_element_to_array(this.value)">
+<input type="button" id="text1" value="ash" name="no" onclick="add_element_to_array(this.value)">
+<input type="button" id="text1" value="astro" name="no" onclick="add_element_to_array(this.value)">
+
+<!-- <input type="button" id="button1" value="Add" onclick="add_element_to_array();"></input> -->
+<input type="button" id="button2" value="Display" onclick="display_array();"></input>
+<div id="Result"></div>
+</body>
+<script type="text/javascript">
+var x = 0;
+var array = Array();
+
+function add_element_to_array(buttonvalue)
+{
+array[x] = buttonvalue;
+alert("Candidate: " + array[x] + " Added to your List");
+x++;
+//document.getElementById("text1").value = "";
+}
+
+function display_array()
+{
+var e = "<hr/>";
+
+for (var y=0; y<array.length; y++)
+{
+e += "Name " + (y+1) + " : " + array[y] + "<br/>";
+}
+document.getElementById("Result").innerHTML = e;
+}
+</script>
+</html>

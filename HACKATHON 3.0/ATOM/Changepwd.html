@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Password</title>
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+        <div class="sidebar-toggle-box">
+          <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+        </div>
+        <!--logo start-->
+        <a href="DashBoard.html" class="logo"><b>COEP<span>HOSTEL</span></b></a>
+        <!--logo end-->
+        <div class="nav notify-row" id="top_menu">
+                <!-- //TODO put search -->
+        </div>
+
+        <div class="top-menu">
+          <ul class="nav pull-right top-menu">
+            <li><a class="logout" href="login.html">Logout</a></li>
+          </ul>
+        </div>
+
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+            <p class="centered"><img src="avatar.png" class="img-circle" width="80"></a></p>
+            <h5 class="centered">--Your-Name--</h5>
+
+            <li class="mt">
+              <a href="DashBoard.html">
+                <i class="fa fa-dashboard"></i>
+                <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li class="mt">
+              <a href="Profile.html">
+                <i class="fa fa-user"></i>
+                <span>Profile</span>
+                </a>
+            </li>
+
+            <li class="mt">
+              <a href="Changepwd.html">
+                <i class="fa fa-user-secret"></i>
+                <span>Change Password</span>
+                </a>
+            </li>
+
+            <li class="mt">
+              <a href="Application.html">
+                <i class="fa fa-wpforms"></i>
+                <span>Application form</span>
+                </a>
+            </li>
+
+            <li class="mt">
+              <a href="Test.html">
+                <i class="fa fa-file-text"></i>
+                <span>Take test</span>
+                </a>
+            </li>
+
+            <li class="mt">
+              <a href="NextWhat.html">
+                <i class="fa fa-question-circle-o"></i>
+                <span>Next What ?</span>
+                </a>
+            </li>
+
+            <li class="mt">
+              <a href="Roommate.html">
+                <i class="fa fa-group"></i>
+                <span>Roomaate Selection</span>
+                </a>
+            </li>
+
+            <li class="mt">
+              <a href="Merit.html">
+                <i class="fa fa-graduation-cap"></i>
+                <span> Merit List</span>
+                </a>
+            </li>
+
+            <li class="mt">
+              <a href="login.html">
+                <i class="glyphicon glyphicon-log-out"></i>
+                <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+        <div class="row mt">
+          <div class="col-lg-12">
+            <div class="row content-panel">
+              <div class="col-md-12 profile-text mt mb centered">
+              <p class="Toplevelpanel centered">
+                    <blockquote class="blockquote " style="background-color:#F9B969;">
+                          <p style="font-size:30px;">Roomates are not permanent but the attachments are.</p>
+                          <footer class="blockquote-footer" style="font-size:15px">Someone famous in <cite title="Source Title">Uzma Akhtar Ashrafi</cite></footer>
+                    </blockquote>
+              </p>
+              </div>
+
+            </div>
+          </div>
+          <!-- /col-lg-12 -->
+          <div class="col-lg-12 mt">
+            <div class="row content-panel">
+              <!-- /panel-heading -->
+              <div class="panel-body">
+                <div class="tab-content">
+                  <div id="overview" class="tab-pane active">
+                      <div id="edit" class="tab-pane">
+                        <div class="row">
+                          <div class="col-md-8 col-lg-offset-2 detailed">
+                              <h4 class="mb">Change Password</h4>
+                              <form role="form" class="form-horizontal">
+                              <div class="container-fluid">
+                                      <div class="row">
+                                              <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 col-xs-12 main">
+                                                  <div class="page-header">
+                                                      <h1>Change Password</h1>
+                                                  </div>
+                                                  <div class="row">
+                                                      <div class="col-xs-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2 well">
+                                                          <form id="form" accept-charset="UTF-8" action="/change-password" autocomplete="on" class="form-horizontal" method="post">
+                                                              <div class="form-inputs">
+                                                                  <div class="form-group">
+                                                                      <label class="control-label col-sm-3 col-md-4" for="current_password">Current password:*</label>
+                                                                      <div class="col-sm-9 col-md-8">
+                                                                          <input autocomplete="current-password" class="form-control" id="current_password" name="currentPassword" required="" type="password">
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="form-group">
+                                                                      <label class="control-label col-sm-3 col-md-4" for="new_password">Password:*</label>
+                                                                      <div class="col-sm-9 col-md-8">
+                                                                          <input autocomplete="new-password" class="form-control" id="new_password" name="newPassword" type="password">
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="form-group">
+                                                                      <label class="control-label col-sm-3 col-md-4" for="password_confirmation">Confirm Password:*</label>
+                                                                      <div class="col-sm-9 col-md-8">
+                                                                          <input autocomplete="new-password" class="form-control" id="confirm_password" type="password">
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="form-actions text-right">
+                                                                  <a class="btn btn-primary" id="Change_password" href="DashBoard.html" type="submit" name="Change_password" disabled>Change password</a>
+                                                              </div>
+                                                          </form>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                      </div>
+                              </div>
+                            </form>
+                          </div>
+
+                        </div>
+                        <!-- /row -->
+                      </div>
+                      <!-- /tab-pane -->
+                  </div>
+                  <!-- /tab-content -->
+                </div>
+                <!-- /panel-body -->
+              </div>
+              <!-- /col-lg-12 -->
+            </div>
+            <!-- /row -->
+          </div>
+          <!-- /container -->
+        </div>
+      </section>
+      <!-- /wrapper -->
+    </section>
+    <!-- /MAIN CONTENT -->
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+              <p>&copy; Copyrights <strong>MindInvaders</strong>. No Rights Reserved</p>
+              <div class="credits">
+                      Created by PICT Student for hackhathon
+              </div>
+              <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <!--common script for all pages-->
+  <script src="lib/common-scripts.js"></script>
+  <!--script for this page-->
+
+  <script>
+        var newPassword = document.getElementById("new_password");
+        var confirmPassword = document.getElementById("confirm_password");
+
+        function validatePassword() {
+            if (newPassword.value != confirmPassword.value) {
+                document.getElementById("confirm_password").setCustomValidity("Passwords do not match!");
+            } else {
+                //empty string means no validation error
+                document.getElementById("confirm_password").setCustomValidity('');
+            }
+        }
+        newPassword.addEventListener("change", validatePassword);
+        confirmPassword.addEventListener("change", validatePassword);
+
+  </script>
+</body>
+
+</html>

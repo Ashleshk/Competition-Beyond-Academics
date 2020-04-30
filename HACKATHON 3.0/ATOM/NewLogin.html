@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Login Page</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+
+
+      <link rel="stylesheet" href="address.css">
+
+</head>
+
+<body>
+
+
+<div class="container">
+  <form>
+
+    <div class="row">
+      <h4>User Name</h4>
+      <div class="input-group input-group-icon">
+        <input type="text" name="username" placeholder="User Name" required/>
+        <div class="input-icon"><i class="fa fa-user-plus"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="email" name="emailid" placeholder="E-mail" required/>
+        <div class="input-icon"><i class="fa fa-envelope-square"></i></div>
+      </div>
+
+      <div id="Pass">
+      <h4>Pass Word</h4>
+
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="***************" name="Password"/>
+        <div class="input-icon"><i class="fa fa-user-secret"></i></div>
+      </div>
+
+
+      <div class="input-group" style="font-weight: bold;font-size:18px;">
+        <center><input type="submit" placeholder="Submit"/></center>
+      </div>
+
+    </div>
+    </div>
+
+  </form>
+</div>
+
+
+    <script  src="{% static 'get/js/address.js' %}"></script>
+<script>
+$(document).ready(function(){
+    $("#H").click(function()
+{
+        $("#login").show();
+  $("#Pass").hide();
+    });
+ $("#B").click(function()
+{
+        $("#login").hide();
+  $("#Pass").show();
+    });
+});
+</script>
+
+
+
+</body>
+
+</html>

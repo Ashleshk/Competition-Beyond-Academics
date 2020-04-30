@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DashBoard</title>
+
+
+
+  <!-- Bootstrap core CSS -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--external css-->
+  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-responsive.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <section id="container">
+    <!-- **********************************************************************************************************************************************************
+        TOP BAR CONTENT & NOTIFICATIONS
+        *********************************************************************************************************************************************************** -->
+    <!--header start-->
+    <header class="header black-bg">
+
+      <div class="sidebar-toggle-box">
+            <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+      </div>
+
+      <!--logo start-->
+      <a href="DashBoard.html" class="logo"><b>COEP<span>HOSTEL</span></b></a>
+      <!--logo end-->
+
+      <div class="nav notify-row" id="top_menu"><!-- //TODO put search --></div>
+
+      <div class="top-menu">
+        <ul class="nav pull-right top-menu">
+          <li><a class="logout" href="login.html">Logout</a></li>
+        </ul>
+      </div>
+
+    </header>
+    <!--header end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN SIDEBAR MENU
+        *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+      <div id="sidebar" class="nav-collapse ">
+        <!-- sidebar menu start-->
+        <ul class="sidebar-menu" id="nav-accordion">
+                <p class="centered"><img src="avatar.png" class="img-circle" width="80"></a></p>
+                <h5 class="centered">--Your-Name--</h5>
+
+                <li class="mt">
+                  <a href="#">
+                    <i class="fa fa-dashboard"></i>
+                    <span>Dashboard</span>
+                    </a>
+                </li>
+
+                <li class="mt">
+                  <a href="Profile.html">
+                    <i class="fa fa-user"></i>
+                    <span>Profile</span>
+                    </a>
+                </li>
+
+                <li class="mt">
+                  <a href="Changepwd.html">
+                    <i class="fa fa-user-secret"></i>
+                    <span>Change Password</span>
+                    </a>
+                </li>
+
+                <li class="mt">
+                  <a href="Application.html">
+                    <i class="fa fa-wpforms"></i>
+                    <span>Application form</span>
+                    </a>
+                </li>
+
+                <li class="mt">
+                  <a href="Test.html">
+                    <i class="fa fa-file-text"></i>
+                    <span>Take test</span>
+                    </a>
+                </li>
+
+                <li class="mt">
+                  <a href="NextWhat.html">
+                    <i class="fa fa-question-circle-o"></i>
+                    <span>Next What ?</span>
+                    </a>
+                </li>
+
+                <li class="mt">
+                  <a href="Roommate.html">
+                    <i class="fa fa-group"></i>
+                    <span>Roommate Selection</span>
+                    </a>
+                </li>
+
+                <li class="mt">
+                  <a href="Merit.html">
+                    <i class="fa fa-graduation-cap"></i>
+                    <span> Merit List</span>
+                    </a>
+                </li>
+
+                <li class="mt">
+                  <a href="login.html">
+                    <i class="glyphicon glyphicon-log-out"></i>
+                    <span>Logout</span>
+                    </a>
+                </li>
+        </ul>
+        <!-- sidebar menu end-->
+      </div>
+    </aside>
+    <!--sidebar end-->
+    <!-- **********************************************************************************************************************************************************
+        MAIN CONTENT
+        *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+      <section class="wrapper site-min-height">
+        <div class="row mt">
+          <div class="col-lg-12">
+            <div class="row content-panel">
+                <div class="col-md-12 profile-text mt mb centered">
+                        <p class="Toplevelpanel"> DashBoard</p>
+                </div>
+            </div>
+          </div>
+          <!-- /col-lg-12 -->
+          <div class="col-lg-12 mt">
+            <div class="row content-panel">
+              <div class="panel-body">
+                <div class="tab-content">
+                  <div id="overview" class="tab-pane active">
+                      <div id="edit" class="tab-pane">
+                            <div class="container">
+                                    <div class="card text-center" style="background-color: #BCEFF5;">
+                                          <div class="card-header">
+                                                <p class="Toplevelpanel"></br>Step 1 : Register For Hostel</p>
+                                          </div>
+
+                                          <div class="card-body ">
+                                                </br>
+                                                <!-- </br>TODO change TExt to suucessfully registered  -->
+                                                <p class="card-text">You haven't registered  </p></br>
+                                                <a href="Application.html" class="btn btn-primary">Apply</a>
+                                          </div>
+                                    </div>
+                            </div>
+
+                            </br>
+                            </br>
+
+                            <div class="container">
+                                  <div class="card text-center" style="background-color: #BCEFF5;">
+                                        <div class="card-header">
+                                              <p class="Toplevelpanel"></br>Step 2 :Status Of Application</p>
+                                        </div>
+
+                                        <div class="card-body ">
+
+                                              </br><!-- </br>TODO change TExt to suucessfully registered  -->
+                                              <p class="card-text">Your Application is in process...  </p></br>
+                                        </div>
+                                  </div>
+                            </div>
+
+                            </br>
+                            </br>
+
+                            <div class="container">
+                                <div class="card text-center" style="background-color:#BCEFF5;">
+                                      <div class="card-header">
+                                          <p class="Toplevelpanel"></br>Step 3 : Choose Your Roommates...</p>
+                                      </div>
+
+                                      <div class="card-body ">
+                                          </br><!-- </br>TODO change TExt to suucessfully registered  -->
+                                          <p class="card-text">You haven't kept your choice yet  </p></br>
+                                          <a href="Roommate.html" class="btn btn-primary">Choose</a>
+                                      </div>
+                                </div>
+                            </div>
+
+                            </br>
+                            </br>
+
+                            <div class="container">
+                              <div class="card text-center" style="background-color: #BCEFF5;">
+                                    <div class="card-header">
+                                          <p class="Toplevelpanel"></br>Step 4 : final Allotment</p></br>
+                                    </div>
+
+                                    <div class="card-body ">
+                                          </br>
+                                          <!-- </br>TODO change TExt to suucessfully registered  -->
+                                          <p class="card-text">final List Not Ready yet ...  </p></br>Wait for a day</br></br>
+                                          <a href="Application.html" class="btn btn-primary">Check</a>
+                                    </div>
+                              </div>
+                            </div>
+                            <!-- /row -->
+                      </div>
+                   <!-- /tab-pane -->
+                  </div>
+                  <!-- /tab-content -->
+                </div>
+                <!-- /panel-body -->
+              </div>
+              <!-- /col-lg-12 -->
+            </div>
+            <!-- /row -->
+          </div>
+          <!-- /container -->
+      </section>
+      <!-- /wrapper -->
+    </section>
+    <!-- /MAIN CONTENT -->
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="text-center">
+            <p>&copy; Copyrights <strong>MindInvaders</strong>. No Rights Reserved</p>
+            <div class="credits">
+              Created by PICT Student for hackhathon
+            </div>
+            <a href=" #" class="go-top"><i class="fa fa-angle-up"></i></a>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+  <!-- js placed at the end of the document so the pages load faster -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <!--common script for all pages-->
+  <script src="lib/common-scripts.js"></script>
+   
+</body>
+
+</html>
