@@ -1,0 +1,319 @@
+/**************************Prime Generator**********************************/
+							round-1
+Peter wants to generate some prime numbers for his cryptosystem. Help him! Your
+ task is to generate all prime numbers between two given numbers!
+
+Input
+The input begins with the number t of test cases in a single line (t<=10). 
+In each of the next t lines there are two numbers m and 
+n (1 <= m <= n <= 1000000000, n-m<=100000) separated by a space.
+
+Output
+For every test case print all prime numbers p such that m <= p <= n, 
+one number per line, test cases separated by an empty line.
+
+Example:
+Imput 
+2
+1 10
+3 5
+
+output
+2
+3
+5
+7
+
+3
+5
+//////////***************************************************************////////
+					Beeramid		round-1
+
+Let's pretend your company just hired your friend from college and paid you a referral
+ bonus. Awesome! To celebrate, you're taking your team out to the terrible dive bar next
+ door and using the referral bonus to buy, and build, the largest three-dimensional beer
+ can pyramid you can. And then probably drink those beers, because let's pretend it's Friday
+ too.
+
+A beer can pyramid will square the number of cans in each level - 1 can in the top level,
+ 4 in the second, 9 in the next, 16, 25...
+
+Complete the beeramid function to return the number of complete levels of a beer can
+ pyramid you can make, given the parameters of:
+
+1) your referral bonus, and
+
+2) the price of a beer can
+
+For example:
+
+beeramid(1500, 2); // should === 12
+beeramid(5000, 3); // should === 16
+
+/////////////************************************************************************/////////
+					A Needle in the Haystack
+
+Write a program that finds all occurences of a given pattern in a given input string. 
+This is often referred to as finding a needle in a haystack.
+
+The program has to detect all occurences of the needle in the haystack. It should take 
+the needle and the haystack as input, and output the positions of each occurence, as shown 
+below. The suggested implementation is the KMP algorithm, but this is not a requirement.
+
+
+Input
+The input consists of a number of test cases. Each test case is composed of three lines, containing:
+
+the length of the needle,
+the needle itself,
+the haystack.
+The length of the needle is only limited by the memory available to your program, 
+so do not make any assumptions - instead, read the length and allocate memory as needed.
+ The haystack is not limited in size, which implies that your program should not read the 
+whole haystack at once.
+
+The test cases come one after another, each occupying three lines, with no additional space or
+ line breaks in between.
+
+Output
+If a match is found, the output should contain the position of the first 
+character of the match. Characters in the haystack are numbered starting with zero.
+
+priny outpiut in separate line. For two different test cases, the positions should be separated
+by an empty line.
+
+Example
+Sample input:
+2
+na
+banananobano
+6
+foobar
+foo
+9
+foobarfoo
+barfoobarfoobarfoobarfoobarfoo
+
+Sample output:
+2
+4
+
+3
+9
+15
+21
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+						ALL IZZ WELL			final round
+Problem Description:
+
+     Mr.ESP used to tell “ALL IZZ WELL” whenever he gets into any trouble. So his friends and the people around him used to laugh at him. But Mr.ESP is very strong in his belief. He believes that the term “ALL IZZ WELL” will make everything fine. Now your task is to ignore the story above and find whether there is a path in the given matrix which makes the sentence “ALL IZZ WELL”
+
+     There is a path from any cell to all its neighbouring cells. A neighbour may share an edge or a corner.
+
+Input Specification:
+
+     The first line consists of an integer t representing the number of test cases.
+
+     The first line of each test case consists of two integers R and C representing the number of rows and number of columns in the matrix. The description of the matrix follows.
+
+Output Specification:
+
+     For each test case print “YES” if there is a path which makes the sentence “ALLIZZWELL”. Else print “NO”.
+
+Note: Take care of 4th test case 
+
+There is a new line after every test case in the input.
+
+Input constraints:
+
+t <= 1000
+R <= 100
+C <= 100
+
+Sample Input:
+
+5
+3 6
+AWE.QX
+LLL.EO
+IZZWLL
+
+1 10
+ALLIZZWELL
+
+2 9
+A.L.Z.E..
+.L.I.W.L.
+
+3 3
+AEL
+LWZ
+LIZ
+
+1 10
+LLEWZZILLA
+
+Sample Output:
+YES
+YES
+NO
+NO
+YES
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+			              NAHI PASAND MatriX		round-1
+
+program a code to convert every single multidimensdional matrix to a single dimensaional matrix
+
+INPUT:
+   the first line will be the an integer representing the number of rows
+	the second row will be also an integer representing te columns of matrix followed by
+	 elements
+OUTPut:
+	linear array with elements and positional cube of it
+
+Example:
+input
+3
+2
+1 2 3 
+4 5 6 
+ 
+
+output
+1-0 2-1 3-8 4-64 5-125 6-216  
+/////////////////////////////////////////////////////////////////////////////////////////
+			JOKER-IS-BACK - Knifes Are Fun		round-final
+no tags 
+
+"Do you know, why I use a knife? Guns are too quick. You can't savor all the little emotions.
+ You see, in their last moments, people show you who they really are. So in a way, I know your
+ friends better than you ever did. Would you like to know which of them were cowards?"
+
+Joker has many knifes, and he wants to assign a distinct integer to each knife so he can 
+easily identify them. The i-th knife can have an integer between 1 and maxNumber[i], inclusive.
+
+
+Return the number of ways he can assign numbers to his knifes, modulo 1,000,000,007.
+ If it's impossible to assign distinct integers to the knifes, print 0.
+
+Input
+The first line contains the number of test cases T (1 <= T <= 666)
+
+Each test case has 2 lines - 1st line denotes number of knifes N (1 <= N <= 66) Joker
+ has and the 2nd line denotes the numbers {maxNumber[0]....maxNumber[N-1]} Joker has.
+
+1 <= maxNumber[i] <= 3000
+
+Output
+Print the number of ways Joker can assign numbers to his knifes, modulo 1,000,000,007. 
+If it's impossible to assign distinct integers to the knifes, print 0. In last line print 
+the string "KILL BATMAN". Don't print any extra spaces.
+
+Example
+Input:
+3
+1
+7
+2
+5 8
+3
+2 1 2
+
+Output:
+7
+35
+0
+KILL BATMAN
+Explanation
+Test case 1 : Joker can assign any number between 1 and 7, inclusive, to the only knife.
+Test case 2 : Joker wants you too think !
+Test case 3 : (1,1,1) (1,1,2) (2,1,1) (2,1,2) are the possible combinations . As the numbering of knifes is not unique so the output is 0.
+/////////////////////////////////////////////////////////////////////////////////////////////////
+				pattern printing		round-2
+In this problem, you need to print the pattern of the following form containing the numbers from  to .
+
+                            4 4 4 4 4 4 4  
+                            4 3 3 3 3 3 4   
+                            4 3 2 2 2 3 4   
+                            4 3 2 1 2 3 4   
+                            4 3 2 2 2 3 4   
+                            4 3 3 3 3 3 4   
+                            4 4 4 4 4 4 4   
+Input Format
+
+The input will contain a single integer .
+
+Constraints
+
+
+Output Format
+
+Print the pattern mentioned in the problem statement.
+
+Sample Input 0
+
+2
+Sample Output 0
+
+2 2 2 
+2 1 2 
+2 2 2
+///////////////////////////////////////////////////////////////////////////////////////////
+				Pattern 2			//round-1
+In this problem , you need to print the pattern of the following
+			
+			1
+		1	2	1
+	1	2	3	2	1
+1	2	3	4	3	2	1
+1	2	3	4	3	2	1
+	1	2	3	2	1
+		1	2	1
+			1
+		     
+	 		 
+///////////////////////////////////////////////////////////////////////////////////////////
+		
+	                  pascal Triangle
+
+	
+Pascal's triangle is a triangular array of binomial coefficients. In Pascal's triangle, each number is the sum of the two numbers directly above it. 
+Write a program to print Pascal's triangle by taking number of rows as input. 
+Input : 3 
+Output :
+                   1
+           1              1  
+1                2                 1
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+Write a program consisting of a function matched(s) that takes  a string s and checks if the
+ brackets "(" and ")" in s are matched: that is, every "(" has a matching ")" after it and every ")" has a matching "(" before it. Your function should ignore all other symbols that appear in s. Your function should return 1 if s has matched brackets and 0 if it does not and finally print true /false respectively. 
+  Input :"(7)(a"
+  Output : False.
+  Input :"((jkl)78(A)&l(8(dd(FJI:),):)?)"
+  Output :True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

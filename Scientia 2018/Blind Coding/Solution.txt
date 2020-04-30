@@ -1,0 +1,276 @@
+/*************************Solutions***************************************/
+			problem-1
+#include<iostream>
+
+using namespace std;
+
+
+int checkprime(int n)
+ {
+	int i;
+
+	if(n == 1 || n == 0)
+
+		return 0;
+
+	for(i=2; i*i<=n; i++)
+ 	{
+	if(n % i == 0)
+
+			return 0;
+
+	}
+	
+	return 1;
+
+}
+
+
+int main()
+ {
+	int t;
+
+	cin>>t;
+
+	while(t--)
+ 	{
+
+		int m, n;
+
+		cin>>m>>n;
+
+		int i;
+	
+		for(i=m; i<=n; i++)
+		 {
+	int k;
+
+			k = checkprime(i);
+
+			if(k)
+
+				cout<<i<<endl;
+
+		}
+		
+		cout<<endl;
+
+	}
+	
+	return 0;
+
+}
+///////////////////////////////////problem -2 //////////////////////////////////////////
+#include<iostream>
+using namespace std;
+void beeramid(int bonus,int cost)
+{
+	int sum=0;
+	int count=0;
+	for(int i=1;;i++)
+	{ sum=sum+i*i;
+		if(sum<=(bonus/cost))
+		{
+	   
+		count++;
+		}
+		else
+			break;
+	}
+   cout<<count<<endl;
+}
+
+int main()
+{   int x;
+   beeramid(1500, 2); // should === 12
+ beeramid(5000, 3); // should === 16
+ cin>>x;
+}
+////////////////////////////////////////////////////////////////////////////////////////////
+#include<iostream>
+#include<stdio.h>
+#include<string.h>
+#include<algorithm>
+
+#define MAX 1001
+
+using namespace std;
+
+int cards[MAX];
+int max_sums[MAX][MAX];
+
+int sum_max(int i, int j){
+    if (i==j){
+        return cards[i];
+    }
+    if (i > j)
+        return 0;
+    if(max_sums[i][j]!=-1){
+        return max_sums[i][j];
+    }
+    int val1, val2;
+    if(cards[j] > cards[i+1]){
+        val1 = cards[i] + sum_max(i+1, j-1);
+    }
+    else{
+        val1 = cards[i] + sum_max(i+2, j);
+    }
+
+    if(cards[i] >= cards[j-1]){
+        val2 = cards[j] + sum_max(i+1, j-1);
+    }
+    else{
+        val2 = cards[j] + sum_max(i, j-2);
+    }
+
+    max_sums[i][j] = max(val1, val2);
+    return max_sums[i][j];
+}
+
+int main(){
+    int n, sum, game_number = 0;
+    while(1){
+        cin >> n;
+        if(n == 0){
+            break;
+        }
+        game_number++;
+        sum = 0;
+        memset(max_sums, -1, sizeof(max_sums));
+        for(int i=1; i<=n; i++){
+            cin >> cards[i];
+            sum += cards[i];
+        }
+        cout << "In game " << game_number << ", the greedy strategy might lose by as many as " ;
+        // sum_max(1,n) - (sum -sum_max(1,n)) -> Points by smart player - points by greedy player
+        cout << 2*sum_max(1,n) - sum << " points." << endl;
+
+    }
+    return 0;
+}
+////////////////////////////////////////////////////////////////////////////////////////////////
+#include<iostream>
+#include<stdio.h>
+#include<string.h>
+ 
+#define MAX 101
+ 
+using namespace std;
+ 
+int R, C;
+char input[MAX][MAX];
+ 
+int x[8] = {0, 0, 1, -1, 1, 1, -1, -1};
+int y[8] = {1, -1, 0, 0, 1, -1, 1, -1};
+ 
+bool visited[MAX][MAX];
+char pattern[11] = {'A', 'L', 'L', 'I', 'Z', 'Z', 'W', 'E', 'L', 'L'};
+ 
+bool checkValid(int i, int j){
+    if(i>=0 && i<R && j>=0 && j<C)
+        return true;
+ 
+    return false;
+}
+ 
+string dfs(int i, int j, int pattern_index){
+    //cout << "i " << i << " j " << j << " index " << pattern_index << endl;
+    string s;
+    visited[i][j] = 1;
+    if (pattern_index == 9){
+        return "YES";
+    }
+    else{
+        for(int x_i=0; x_i<8; x_i++){
+            if(checkValid(i+x[x_i], j+y[x_i])){
+                if(input[i+x[x_i]][j+y[x_i]] == pattern[pattern_index+1]
+                    && !visited[i+x[x_i]][j+y[x_i]]){
+ 
+                    visited[i+x[x_i]][j+y[x_i]] = 1;
+                    s = dfs(i+x[x_i], j+y[x_i], pattern_index + 1);
+                    if (s == "YES"){
+                        return s;
+                    visited[i+x[x_i]][j+y[x_i]] = 0;
+                    }
+                }
+            }
+        }
+    }
+    visited[i][j] = 0;
+    return "NO";
+}
+ 
+int main(){
+    int t;
+    scanf("%d", &t);
+    while(t--){
+        scanf("%d%d", &R,&C);
+ 
+        memset(visited, 0, sizeof(visited));
+ 
+        for(int i=0; i<R; i++){
+                scanf("%s", input[i]);
+                //cout << input[i];
+        }
+ 
+        int flag = false;
+ 
+        for( int i=0; i<R; i++){
+            for(int j=0; j<C; j++){
+                if(input[i][j] == 'A' && dfs(i, j, 0) == "YES"){
+                        flag = true;
+                        break;
+                }
+            }
+            if(flag)
+                break;
+        }
+ 
+        if(flag){
+            printf("YES\n");
+        }
+        else{
+            printf("NO\n");
+        }
+ 
+    }
+    return 0;
+}
+/////////////////////////////////////////////////////////////////////////////////////////////
+				nahi pasasnd matrix
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+#include<iostream>
+#include<stdio.h>
+#include<algorithm>
+
+#define MAX 67
+#define ll long long
+#define MOD 1000000007
+using namespace std;
+
+int maxN[MAX];
+
+int main(){
+    int t;
+    int N;
+    ll ans ;
+    cin >> t;
+    while (t--){
+        ans = 1;
+        scanf("%d",&N);
+        for (int i=0; i<N; i++){
+            scanf("%d",&maxN[i]);
+        }
+        sort(maxN, maxN + N);
+        for (int i=0; i<N; i++){
+            ans = (ans * (maxN[i]-i))%MOD;
+        }
+        cout << ans << endl;
+    }
+    cout << "KILL BATMAN\n";
+    return 0;
+}
+//////////////////////////////////////////////////////////////////////////////////////////
